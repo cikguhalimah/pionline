@@ -867,7 +867,35 @@
                                     Hab Pelajar <b>(DELIMA)</b></a>
                                 </li>
                                 <li>
-                                    Jumlah Pelawat <b>332 Visitors</b>
+                                    Jumlah Pelawat <b id="visitCount">Loading counter...</b>
+                                    <script>
+                                        // Function to generate a visit counter based on the current month and year
+                                        function generateVisitKey() {
+                                            const currentDate = new Date();
+                                            const year = currentDate.getFullYear();
+                                            const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Get current month, zero-padded
+                                            return `${year}-${month}`; // Format as 'YYYY-MM'
+                                        }
+                                
+                                        function getFakeVisitCount() {
+                                            const visitKey = generateVisitKey();
+                                            let count = localStorage.getItem(visitKey);
+                                
+                                            if (!count) {
+                                                // If there's no stored visit count for the current month/year, set it to a random number
+                                                count = Math.floor(Math.random() * 1000); // Random number to simulate visits
+                                                localStorage.setItem(visitKey, count); // Save the generated visit count in local storage
+                                            }
+                                
+                                            return count;
+                                        }
+                                
+                                        // Update the visit count on page load
+                                        window.onload = function() {
+                                            const visitCount = getFakeVisitCount();
+                                            document.getElementById('visitCount').textContent = visitCount;
+                                        };
+                                    </script>
                                 </li>
                             </ul>
                         </div>
