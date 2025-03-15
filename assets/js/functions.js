@@ -62,6 +62,7 @@ $(document).ready(function () {
         var content = $(this).data("target");
         $(this).hide();
         $("[data-content='"+content+"']").fadeIn();
+        $("html,body").css("overflow","hidden");
     });
 
     $(document).on("click",".nextpage",function(event){
@@ -75,7 +76,7 @@ $(document).ready(function () {
     // close content
     $(document).on("click",".close_content",function(event){ 
         var target=$(this).data("target");  $("[data-content='"+target+"']").fadeOut();  $("[data-content='main']").fadeIn();  
-
+        $("html,body").css("overflow","");
     });
 
 });
