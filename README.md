@@ -1,6 +1,5 @@
-=========================================
-**APLIKASI WEBSITE PENGAJIAN INTERAKTIF**
-=========================================
+==**APLIKASI WEBSITE PENGAJIAN INTERAKTIF**
+
 
 **DISCLAIMER:**
 1. Projek ini adalah hak milik saya 100% (CIKGU HALIMAH SKSN - cikguhalimah.sksn@gmail.com ).
