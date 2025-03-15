@@ -1,3 +1,8 @@
+**DISCLAIMER:**
+1. Projek ini adalah hak milik saya.
+2. Sebarang cetak rompak dan pengklonan adalah dilarang sama sekali.
+3. Semua kod dan file hanya boleh dijadikan sebagai sumber rujukan sahaja.
+   
 **Ini ialah Projek di bawah subjek Teknologi & Media Pengajaran**
 
 **Tujuan:**
