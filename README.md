@@ -7,7 +7,7 @@
 2. Sebarang cetak rompak dan pengklonan adalah dilarang sama sekali.
 3. Semua kod dan file hanya boleh dijadikan sebagai sumber rujukan sahaja.
    
-**NOTE:**
+**NOTE:** 
 Ini ialah Projek APLIKASI WEBSITE PENGAJIAN INTERAKTIF di bawah subjek Teknologi & Media Pengajaran (PDPP - COS PAI) di bawah cawangan IPG
 
 **TUJUAN:**
