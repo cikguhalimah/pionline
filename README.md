@@ -19,3 +19,4 @@ Ini ialah Projek APLIKASI WEBSITE PENGAJIAN INTERAKTIF di bawah subjek Teknologi
 - 'Target audience' ialah pelajar Tahun 1
 - Elemen 'fun and attractive approach' digunakan di dalam aplikasi website ini.
 - Gabungan element interaktif multimedia seperti **audio** dan **animasi** sebagai elemen _booster_ di dalam menarik minat pelajar.
+- Pengunbaan warna tema dan elemen kontra dan kod yang bersesuaian 'Target audience'
