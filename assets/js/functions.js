@@ -1,23 +1,5 @@
 $(document).ready(function () {
     $(".preloader").fadeOut();
-    // $(document).on("click",".act",function(event){
-    //     event.stopPropagation(); // Prevent click from bubbling up
-    //     var act = $(this).data("act");
-    //     var target=$(this).data("target");
-        
-    //     if(act == "loadlist"){        
-    //         $("[target='"+target+"']").fadeIn();    
-    //     }
-    // });
-    // $(document).on("mouseleave",".act",function(event){
-    //     $(this).stop();    
-    //     var act = $(this).data("act");
-    //     var target=$(this).data("target");
-
-    //     if(act == "loadlist"){    
-    //         $("[target='"+target+"']").fadeOut();    
-    //     }
-    // });
 
 
     function activateClass(stat,targetclass){        
@@ -56,13 +38,14 @@ $(document).ready(function () {
         var type = $(this).data("browse");
         $("[data-content='main']").hide();
         $("[data-content='"+type+"']").fadeIn();        
+        $("html,body").css("overflow","hidden");
     });
 
     $(document).on("click",".showcontent",function(event){
         var content = $(this).data("target");
         $(this).hide();
         $("[data-content='"+content+"']").fadeIn();
-        $("html,body").css("overflow","hidden");
+        
     });
 
     $(document).on("click",".nextpage",function(event){
