@@ -1,6 +1,10 @@
 $(document).ready(function () {
     $(".preloader").fadeOut();
 
+    // AUDIO PART //
+    var audio = new Audio("./assets/sound/reading-song.m4a"); 
+    audio.volume = 0.35;
+    var volume = $(".volume");
 
     function activateClass(stat,targetclass){        
         if(stat===false){ $("."+targetclass).removeClass("actived");}
@@ -39,6 +43,8 @@ $(document).ready(function () {
         $("[data-content='main']").hide();
         $("[data-content='"+type+"']").fadeIn();        
         $("html,body").css("overflow","hidden");
+        audio.play();  
+        
     });
 
     $(document).on("click",".showcontent",function(event){
@@ -60,6 +66,20 @@ $(document).ready(function () {
     $(document).on("click",".close_content",function(event){ 
         var target=$(this).data("target");  $("[data-content='"+target+"']").fadeOut();  $("[data-content='main']").fadeIn();  
         $("html,body").css("overflow","");
+        
+        audio.pause(); 
+        volume.removeClass("muted");
     });
+
+    $(document).on("click",".volume",function(event){ 
+        if(volume.hasClass("muted")){
+            audio.play(); 
+            volume.removeClass("muted")
+        }else{
+            audio.pause(); 
+            volume.removeClass("muted").addClass("muted");
+        }
+    });
+    
 
 });
